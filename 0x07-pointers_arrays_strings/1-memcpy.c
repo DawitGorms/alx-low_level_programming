@@ -1,12 +1,23 @@
 #include "main.h"
-#include <stdio.h>
 
-char *_memset(char *s, char b, unsigned int n)
+/**
+  * _memcpy - main function prototype
+  *
+  * @src: Source parameter
+  *
+  * @dest: Destination parameter
+  *
+  * @n: Function parameter
+  *
+  * Return: Copied memory
+  */
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-    unsigned int i;
-    for (i = 0; i < n; i++)
-    {
-        s[i] = b;
-    }
-    return s;
+	unsigned int k;
+
+	for (k = 0; k < n; k++)
+	{
+	dest[k] = src[k];
+	}
+	return (dest);
 }
